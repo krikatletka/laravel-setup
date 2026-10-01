@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Робота з файлами</title>
+</head>
+<body>
+
+<h2>1. Завантаження файлу</h2>
+<form action="process.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <br><br>
+    <input type="submit" value="Завантажити файл">
+</form>
+
+<h2>2. Запис тексту у файл</h2>
+<form action="text.php" method="post">
+    <textarea name="text" rows="5" cols="40" placeholder="Введіть текст"></textarea>
+    <br><br>
+    <input type="submit" value="Записати текст">
+</form>
+<br>
+<a href="list.php">Переглянути список файлів</a>
+</body>
+</html>
